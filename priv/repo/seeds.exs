@@ -9,3 +9,18 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias NimbleCSV.RFC4180, as: CSV
+alias Notifier.Repo
+alias Notifier.Organization.Memo
+
+"priv/seed_data/memo.csv"
+|> File.read!
+|> CSV.parse_string
+|> Enum.each(fn [_,message, recipent, status, title] ->
+  recipent = String.to_integer (recipent)
+
+
+
+  %Memo{message: message, recipient: recipent, status: status, title: title}
+  |> Repo.insert
+end)

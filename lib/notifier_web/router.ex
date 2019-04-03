@@ -21,6 +21,7 @@ defmodule NotifierWeb.Router do
     pipe_through [:browser, :frontend]
 
     get "/", PageController, :index
+<<<<<<< HEAD
     # resources "/users", UserController
     get "/login", SessionController, :new
     post "/login", SessionController, :create
@@ -28,6 +29,9 @@ defmodule NotifierWeb.Router do
     get "/register", RegistrationController, :new
     post "/register", RegistrationController, :create
    
+=======
+    resources "/memo", MemoController
+>>>>>>> e9d61e31f4699e6161ae786cf1b1e3e3d85618ba
   end
 
   scope "/", NotifierWeb do
