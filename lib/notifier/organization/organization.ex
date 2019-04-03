@@ -37,10 +37,16 @@ defmodule Notifier.Organization do
 
   def get_memo!(id), do: Repo.get!(Memo, id)
 
-  def create_memo(attrs \\ %{}) do
+  def build_memo(attrs \\ %{}) do
     %Memo{}
     |> Memo.changeset(attrs)
-    |> Repo.insert()
+  end
+
+  def create_memo(attrs) do
+    attrs
+    IO.inspect attrs
+    # |> build_memo
+    # |> Repo.insert()
   end
 
   def update_memo(%Memo{} = memo, attrs) do

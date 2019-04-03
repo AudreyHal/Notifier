@@ -1,0 +1,12 @@
+<div class= "content-pane">
+  <div class="container">
+    <%= form_for @changeset, Routes.memo_path(@conn, :create), [as: :memo, id: "memo-form"], fn f -> %>
+      <%= if @changeset.action do %>
+        <div id="form-error" class="alert alert-danger">
+          <p>Oops, something went wrong!</p>
+        </div>
+      <% end %>
+      
+    <% end %>
+  </div>
+</div>

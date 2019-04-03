@@ -20,4 +20,5 @@ defmodule Notifier.Organization.Memo do
     |> cast(attrs, [:title, :message, :status, :sender, :recipient])
     |> validate_required([:title, :message, :status, :sender, :recipient])
   end
+
 end
