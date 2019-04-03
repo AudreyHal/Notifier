@@ -1,0 +1,51 @@
+
+.memo_name_div_reg{
+  height:28px;
+ padding-left:10px;
+ padding-right:10px;
+ margin-bottom:25px;
+ width:auto;
+}
+
+.memo_name_div_login{
+  height:28px;
+ padding-left:60px;
+ padding-right:60px;
+ margin-bottom:25px;
+ width:auto;
+}
+.sign_up_memo{
+
+  font-size:24px;
+  color: #000000;
+  padding-left:60px;
+  padding-right:60px;
+
+}
+.name_input{
+  width:348px;
+  height:40px;
+  margin-top:25px;
+  margin-bottom:12px;
+  border-radius:1px;
+  background-color: #eeeeee !important;
+  border: solid 1px rgba(155, 165, 168, 0.5);
+}
+.email_input{
+  width:348px;
+  height:40px;
+  margin-top:12px;
+  margin-bottom:12px;
+   border-radius: 1px;
+  background-color: #eeeeee!important;
+    border: solid 1px rgba(155, 165, 168, 0.5);
+}
+.reg_button{
+  width:347px;
+   height:45px;
+   margin-top:49px;
+   font-size:16px;
+   text-align:center;
+    background-color: #ea4c89;
+    border:0px 
+}

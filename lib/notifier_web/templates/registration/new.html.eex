@@ -1,0 +1,32 @@
+<div>
+
+<div>
+
+<%= form_for @changeset, Routes.registration_path(@conn, :create), [as:
+:registration, id: "registration-form"], fn f -> %>
+
+<div class="memo_name_div_reg">
+<p class="sign_up_memo">Sign up to memo</p>
+</div>
+
+<div class="form-group">
+<%= text_input f, :name, placeholder: "Name", class: "form-input name_input"%>
+</div>
+
+<div class="form-group">
+<%= text_input f, :email, placeholder: "Email", class: "form-input email_input"%>
+</div>
+
+<div class="form-group input-sm">
+<%= password_input f, :password, placeholder: "Password", class: "form-input email_input"%>
+</div>
+
+<%= if @changeset.action do %>
+<div id="form-error" class="alert alert-danger">
+<p>Oops, something went wrong! Please check the errors
+below.</p>
+</div>
+<% end %>
+
+<%= submit "Sign in", class: "btn btn-primary reg_button"%>
+<% end %>
