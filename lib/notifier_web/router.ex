@@ -17,6 +17,7 @@ defmodule NotifierWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/memo", MemoController
   end
 
   # Other scopes may use custom stacks.
