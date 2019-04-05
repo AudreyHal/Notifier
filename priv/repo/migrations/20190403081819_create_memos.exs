@@ -5,9 +5,8 @@ defmodule Notifier.Repo.Migrations.CreateMemos do
     create table(:memos) do
       add :title, :string
       add :message, :string
-      add :status, :string
-      add :sender, references(:users)
-      add :recipient, :integer
+      add :is_draft, :boolean
+      add :user_id, references(:users)
 
       timestamps()
     end

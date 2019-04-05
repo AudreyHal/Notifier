@@ -6,19 +6,18 @@ defmodule Notifier.Organization.Memo do
 
   schema "memos" do
     field :message, :string
-    field :recipient, :integer
-    field :status, :string
     field :title, :string
+    field :is_draft, :boolean
     belongs_to :user, User
 
     timestamps()
-
+  end
 
   @doc false
   def changeset(memo, attrs) do
     memo
-    |> cast(attrs, [:title, :message, :status, :recipient])
-    |> validate_required([:title, :message, :status, :recipient])
+    |> cast(attrs, [:title, :message, :is_draft, :user_id])
+    |> validate_required([:title, :message, :is_draft, :user_id])
   end
 
 end
