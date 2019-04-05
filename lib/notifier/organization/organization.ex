@@ -73,11 +73,12 @@ defmodule Notifier.Organization do
 
   def fetch_draft_memo do
     query = from m in Memo, where: m.is_draft == true
+    Repo.all(query)
+  end
 
-/1
-/1
-/1
-/1
+
+
+
   def send_memo(%Memo{} = memo, %User{}= user) do
     memo
     |> Repo.preload(:users) # Load existing data
