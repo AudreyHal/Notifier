@@ -69,7 +69,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :notifier, Notifier.Repo,
   username: "postgres",
-  password: "admin",
+  password: "postgres",
   database: "notifier_dev",
   hostname: "localhost",
   pool_size: 10

@@ -14,7 +14,7 @@ config :hound, driver: "phantomjs"
 # Configure your database
 config :notifier, Notifier.Repo,
   username: "postgres",
-  password: "admin",
+  password: "postgres",
   database: "notifier_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

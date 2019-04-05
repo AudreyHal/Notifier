@@ -23,19 +23,5 @@ defmodule Notifier.Organization.User do
     |> validate_format(:email, ~r/@/, message: "is invalid")
     |> validate_length(:password, min: 5, max: 10)
     |> unique_constraint(:email)
-    |> put_hashed_password()
-  end
 
-  defp put_hashed_password(changeset) do
-    # case changeset.valid? do
-      # true ->
-      #   changes = changeset.changes
-        # put_change(changeset, :password_hash, hash_pwd_salt(changes.password))
-        case changeset do
-          %Ecto.Changeset{valid?: true, changes: %{password: pass}} ->
-        put_change(changeset, :password_hash, hash_pwd_salt(pass))
-      _ ->
-        changeset
-    end
-  end
 end
