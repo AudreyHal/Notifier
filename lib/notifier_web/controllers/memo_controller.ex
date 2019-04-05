@@ -1,9 +1,11 @@
 defmodule NotifierWeb.MemoController do
   use NotifierWeb, :controller
   alias Notifier.Organization
+  alias Notifier.Organization.Memo
 
   def index(conn, _params) do
-    render(conn, "index.html")
+  memo = Organization.list_memos
+    render(conn, "index.html", memo: memo)
   end
 
   def new(conn, _) do

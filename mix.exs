@@ -46,7 +46,8 @@ defmodule Notifier.MixProject do
       {:hound, "~> 1.0"},
       {:comeonin, "~> 5.1"},
       {:bcrypt_elixir, "~> 2.0"},
-      {:faker, "~> 0.12"}
+      {:faker, "~> 0.12"},
+      {:nimble_csv, "~> 0.1.0"}
     ]
   end
 

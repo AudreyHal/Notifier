@@ -12,7 +12,7 @@ defmodule Notifier.Organization.Memo do
     belongs_to :user, User
 
     timestamps()
-  end
+
 
   @doc false
   def changeset(memo, attrs) do

@@ -4,6 +4,7 @@
 @import "../node_modules/spectre.css/dist/spectre.min.css";
 @import "../node_modules/spectre.css/dist/spectre-exp.min.css";
 @import "./font.css";
+@import "./style.css";
 
 
 
@@ -45,7 +46,10 @@ body{width:100%; min-height: 100% }
 .tab-btn:active{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:hover{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:visited{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9; }
+<<<<<<< HEAD
 
 .btn {width: 193px; padding-left: 20px; padding-right: 20px; background: #ea4c89 !important; border-color: #ea4c89 !important;}
 .pull-right {float: right;}
 #memo_message{height: 200px;}
+=======
+>>>>>>> 24a40315072560f8d8d4e76a391568f87288a252
