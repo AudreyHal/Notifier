@@ -1,3 +1,3 @@
-id,message,recipient,status,title
-1,meeting,2,pending,Urgent
-2,reminder,3,pending,Reminderww
+id,message,title
+1,meeting,Urgent
+2,reminder,Reminder

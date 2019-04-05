@@ -1,0 +1,47 @@
+<div class=" column main-pane">
+
+<p class="content-title" >Add Recipents</p>
+            
+    <div class= "content-pane-memo">
+     
+      <table class="table table-striped table-hover trans-table col-11 col-mx-auto">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+     <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @user do %> 
+      <tr>
+         
+<%= form_for @conn, "/memo/send", [class: "user-form form-inline", as: :user], fn f -> %>
+<td class="id"><%= user.id %> </td>
+<td class="description"><%= user.name %> </td>
+<td class="description"> <%= submit "Send", class: "btn btn-primary pull-right"%>  </td>
+
+
+<%= hidden_input f, :user_id, value: user.id %>
+
+<%= hidden_input f, :memo_id, value: @memo.id %>
+
+       
+      </tr>
+  <% end %>
+ <% end %>      
+ 
+
+
+
+
+  </tbody>
+</table>
+
+
+
+  
+    
+    
+    </div>
+    </div>
