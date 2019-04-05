@@ -46,3 +46,12 @@ body{width:100%; min-height: 100% }
 .tab-btn:active{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:hover{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:visited{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9; }
+
+.content-pane-details{margin:0px 66px 0px 46px ; background-color: #ffffff; width: 777px; height:489px; padding-left:37px; padding-top:18px}
+.detail-pane{ margin: 18px 36px; }
+.field{color:#000000; font-size: 17px; margin-bottom: 23px}
+.head{color:#828283; font-size: 17px; margin-bottom: 23px}
+.breadcrumb .breadcrumb-item:not(:first-child)::before {content:">"}
+.crumb{margin:43px 0px 43.5px 51px; font-size:14px; width:1000px; } 
+.main-pane-details{margin: 0px; padding: 0px; background-color:  #f9f9f9;  }
+.status{color:#f5a623; line-height: 24px; font-size:12px }

@@ -28,12 +28,9 @@ defmodule NotifierWeb.MemoController do
   end
 
   def send(conn, %{ "user" => user_params}) do
-    IO.inspect "user_params"
-    IO.inspect user_params
     memo_id = Map.get(user_params, "memo_id")
-    IO.inspect memo_id
     user_id = Map.get(user_params, "user_id")
-    IO.inspect user_id
+
 
     case Organization.add_recipent(memo_id, user_id) do
       {:ok,_} ->

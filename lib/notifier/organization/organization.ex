@@ -88,7 +88,7 @@ defmodule Notifier.Organization do
     Memo.changeset(memo, %{})
   end
 
-
+#f5a623
   def send_memo(%Memo{} = memo, %User{}= user) do
   memo
   |> Repo.preload(:users) # Load existing data

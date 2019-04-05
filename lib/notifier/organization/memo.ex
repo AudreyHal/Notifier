@@ -18,7 +18,7 @@ defmodule Notifier.Organization.Memo do
 
      timestamps()
 
-   # defstruct [:id, :title, :status]
+  
 
 
   @doc false
