@@ -4,15 +4,23 @@ defmodule NotifierWeb.MemoController do
   alias Notifier.Organization.Memo
 
   def index(conn, _params) do
-    memo = Organization.fetch_draft_memo
-    IO.inspect "memo"
-    IO.inspect memo
-    render(conn, "index.html", memo: memo)
+    memos = Organization.fetch_draft_memo
+    render(conn, "index.html", memos: memos)
   end
 
   def new(conn, _) do
     changeset = Organization.build_memo()
     render(conn, :new, changeset: changeset)
+  end
+
+  def show(conn, %{"id" => id}) do
+    memo = Organization.get_memo(id)
+    render(conn, :edit, memo: memo)
+  end
+
+  def edit(conn, %{"id" => id}) do
+    memo = Organization.get_memo(id)
+    render(conn, :edit, memo: memo)
   end
 
   def create(conn, %{"memo" => memo_params}) do
