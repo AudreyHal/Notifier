@@ -9,7 +9,7 @@ defmodule NotifierWeb.MemoController do
   def new(conn, _) do
     changeset = Organization.build_memo()
     users = Organization.list_users
-    # render(conn, "new.html", changeset: changeset, users: users)
+    render(conn, "new.html", changeset: changeset, users: users)
   end
 
   def create(conn, %{"memo" => memo_params}) do

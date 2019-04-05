@@ -17,8 +17,8 @@ defmodule Notifier.Organization.Memo do
   @doc false
   def changeset(memo, attrs) do
     memo
-    |> cast(attrs, [:title, :message, :status, :sender, :recipient])
-    |> validate_required([:title, :message, :status, :sender, :recipient])
+    |> cast(attrs, [:title, :message, :status, :recipient])
+    |> validate_required([:title, :message, :status, :recipient])
   end
 
 end

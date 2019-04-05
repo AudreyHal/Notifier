@@ -1,12 +1,35 @@
-<div class= "content-pane">
-  <div class="container">
-    <%= form_for @changeset, Routes.memo_path(@conn, :create), [as: :memo, id: "memo-form"], fn f -> %>
+<div class=" column main-pane">    
+  <div class= "content-pane">
+    <div class="container">
+      <%= form_for @changeset, Routes.memo_path(@conn, :create), [as: :memo, id: "memo-form"], fn f -> %>
       <%= if @changeset.action do %>
         <div id="form-error" class="alert alert-danger">
-          <p>Oops, something went wrong!</p>
+        <p>Oops, something went wrong!</p>
         </div>
       <% end %>
-      
-    <% end %>
+      <div class="columns">
+        <div class="column col-9">
+          <div class="form-group">
+            <div class="form-group">
+              <%= select f, :recipient, @users, class: "form-select", prompt: "To" %>
+              <%= error_tag f, :recipient %>
+            </div>
+          </div>  
+          <div class="form-group">
+            <%= text_input f, :title, class: "form-input", placeholder: "Subject" %>
+            <%= error_tag f, :title %>
+          </div>
+          <div class="form-group">
+            <%= textarea f, :message, class: "form-input", placeholder: "Message" %>
+            <%= error_tag f, :message %>
+          </div>
+          <div class="pull-right">
+            <%= submit "Save For Later", class: "btn btn-primary" %>
+            <%= submit "Send", class: "btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>
