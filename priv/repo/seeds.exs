@@ -16,11 +16,11 @@ alias Notifier.Organization.Memo
 "priv/seed_data/memo.csv"
 |> File.read!
 |> CSV.parse_string
-|> Enum.each(fn [_,message, recipent, status, title] ->
-  recipent = String.to_integer (recipent)
+|> Enum.each(fn [_,message,title,is_draft] ->
 
+  is_draft=String.to_existing_atom(is_draft)
+  
 
-
-  %Memo{message: message, recipient: recipent, status: status, title: title}
+  %Memo{message: message, title: title, is_draft: is_draft}
   |> Repo.insert
 end)

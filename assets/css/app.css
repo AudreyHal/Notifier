@@ -8,14 +8,16 @@
 
 
 
-.content-pane{margin:104px 66px 0px 46px ; background-color: #ffffff; height:100%; padding-left:37px; padding-top:18px}
-
+.content-pane-memo{margin:0px 66px 0px 46px ; background-color: #ffffff; height:100%; padding-left:37px; padding-top:18px}
 .grid-container{ width:100%; height:100vh}
 .header-text{padding:30px 0px 16px 39px; font-size: 17px; height:20px;   color: #000000;}
 
 html{height:100%}
 body{width:100%; min-height: 100% }
 .content-pane{margin:83px 66px 0px 46px ; background-color: #ffffff; height:100%; padding-left:37px; padding-top:18px}
+.content-pane-1{margin:16px 48px 0px 48px ; background-color: #ffffff; padding-top:18px; padding-bottom: 48px;}
+.draft-pane{margin-left: 48px !important; margin-right: 48px !important; margin-top: 32px;}
+.content-title{margin-left: 51px; margin-top: 51px; margin-bottom: 33px; width:180px; height: 28px; font-size: 24px }
 .grid-container{ width:100%; height:1600px; margin-bottom: 0px; padding-bottom: 0px; overflow:hidden }
 .header-text{padding:30px 0px 16px 39px; font-size: 17px; height:20px;   color: #000000;}
 .main-pane{margin: 0px; padding: 0px; background-color:  #f9f9f9; }
@@ -46,3 +48,18 @@ body{width:100%; min-height: 100% }
 .tab-btn:active{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:hover{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9}
 .tab-btn:visited{background-color: #f8f8ff; border-right: 5px solid #6964d9; color:#6964d9; }
+
+.content-pane-details{margin:0px 66px 0px 46px ; background-color: #ffffff; width: 777px; height:489px; padding-left:37px; padding-top:18px}
+.detail-pane{ margin: 18px 36px; }
+.field{color:#000000; font-size: 17px; margin-bottom: 23px}
+.head{color:#828283; font-size: 17px; margin-bottom: 23px}
+.breadcrumb .breadcrumb-item:not(:first-child)::before {content:">"}
+.crumb{margin:43px 0px 43.5px 51px; font-size:14px; width:1000px; } 
+.main-pane-details{margin: 0px; padding: 0px; background-color:  #f9f9f9;  }
+.status{color:#f5a623; line-height: 24px; font-size:12px; border:1px solid rgba(245, 166, 35, 0.18); padding:  0px 13px  }
+
+.btn1 {width: 193px; padding-left: 20px; padding-right: 20px; border-color: #ea4c89 !important; color: #ea4c89}
+.draft-new {width: 193px; background: #ea4c89 !important; border-color: #ea4c89 !important; color: #fff !important;}
+.btn-primary1 {width: 193px; padding-left: 20px; padding-right: 20px; background: #ea4c89 !important; border-color: #ea4c89 !important;}
+.pull-right1 {float: right;}
+#memo_message{height: 200px;}

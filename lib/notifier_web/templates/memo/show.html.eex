@@ -1,0 +1,25 @@
+<div class=" column main-pane">
+ <div class="crumb">
+<ul class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#"><span style="color:black"><b>Memos</b></span></a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#"><span style="color:#9b9b9b"> Details</span></a>
+  </li>
+  
+</ul>
+</div>
+ 
+            
+    <div class= "content-pane-details">
+<div class ="detail-pane columns">
+<div class="column col-2 head"  > Draft:</div><div class="column col-10 field"><span class="status"><%= @detail.is_draft%></span></div>
+<div class="column col-2 head">To:</div><div class="column col-10 field"><%= @detail.users |>Enum.map(&(&1.name)) |> Enum.join(",") %></div>
+<div class="column col-2 head"  >Title:</div><div class="column col-10 field"><%= @detail.title%></div>
+<div class="column col-2 head" >Message:</div><div class="column col-10 field"><%= @detail.message%></div>
+
+
+</div>
+</div>
+</div>
