@@ -1,6 +1,29 @@
-<div class=" column main-pane">
-            
-    <div class= "content-pane">
-    
-</div>
+<div class=" column main-pane">    
+  <div class= "content-pane">
+    <div class="container">
+      <%= form_for @changeset, Routes.memo_path(@conn, :create), [as: :memo, id: "memo-form"], fn f -> %>
+      <%= if @changeset.action do %>
+        <div class="alert alert-danger">
+          <p>Oops, something went wrong! Please check the errors below.</p>
+        </div>
+      <% end %>
+      <div class="columns">
+        <div class="column col-9">  
+          <div class="form-group">
+            <%= text_input f, :title, class: "form-input", placeholder: "Subject" %>
+            <%= error_tag f, :title %>
+          </div>
+          <div class="form-group">
+            <%= textarea f, :message, class: "form-input", placeholder: "Message" %>
+            <%= error_tag f, :message %>
+          </div>
+          <div class="pull-right">
+            <%# <button id="save_for_later" class="btn">Save For Later</button> %>
+            <%= submit "Save", class: "btn btn-primary btn1 btn-primary1 pull-right1" %>
+          </div>
+        </div>
+      </div>
+      <% end %>
     </div>
+  </div>
+</div>

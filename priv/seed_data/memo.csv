@@ -1,3 +1,3 @@
-id,message,title
-1,meeting,Urgent
-2,reminder,Reminder
+id,message,title,is_draft
+1,meeting,Urgent,true
+2,reminder,Reminder,true
