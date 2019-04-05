@@ -39,7 +39,7 @@
     <tr>
       <th>ID</th>
       <th>Title</th>
-      <th>Status</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -47,7 +47,7 @@
       <tr>
         <td class="id"><%= memo.id %></td>
         <td class="description"><%= memo.title %></td>
-        <td class="amount"><%= memo.status %></td>
+       
       </tr>
   <% end %>
   </tbody>

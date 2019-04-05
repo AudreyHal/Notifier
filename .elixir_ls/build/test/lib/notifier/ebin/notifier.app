@@ -8,6 +8,7 @@
                         'Elixir.Notifier.DataCase',
                         'Elixir.Notifier.Organization',
                         'Elixir.Notifier.Organization.Memo',
+                        'Elixir.Notifier.Organization.Recipent',
                         'Elixir.Notifier.Organization.User',
                         'Elixir.Notifier.Repo','Elixir.NotifierWeb',
                         'Elixir.NotifierWeb.ChannelCase',

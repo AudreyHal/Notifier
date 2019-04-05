@@ -27,7 +27,9 @@ defmodule NotifierWeb.Router do
     get "/logout", SessionController, :delete
     get "/register", RegistrationController, :new
     post "/register", RegistrationController, :create
-    resources "/memo", MemoController
+   resources "/memo", MemoController
+    post "/memo/send", MemoController, :send
+    get "/memo/add/:id", MemoController, :add
   end
 
   scope "/", NotifierWeb do
