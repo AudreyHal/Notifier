@@ -26,7 +26,7 @@
          </div>
       </div>
       
-     <%= render @view_module, @view_template, assigns %>
+     <%= render @view_module, @view_template, assigns  %>
    
     </div>
     </main>

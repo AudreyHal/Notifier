@@ -19,7 +19,7 @@
 <%= form_for @conn, "/memo/send", [class: "user-form form-inline", as: :user], fn f -> %>
 <td class="id"><%= user.id %> </td>
 <td class="description"><%= user.name %> </td>
-<td class="description"><button type="submit" class= "btn btn-primary "  >Send</button>  </td>
+<td class="description"><button type="submit" class= "btn btn-primary ">Send</button>  </td>
 
 
 <%= hidden_input f, :user_id, value: user.id %>

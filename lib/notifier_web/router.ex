@@ -20,21 +20,22 @@ defmodule NotifierWeb.Router do
   scope "/", NotifierWeb do
     pipe_through [:browser, :frontend]
 
-    get "/", PageController, :index
+
     # resources "/users", UserController
     get "/login", SessionController, :new
     post "/login", SessionController, :create
     get "/logout", SessionController, :delete
     get "/register", RegistrationController, :new
     post "/register", RegistrationController, :create
-   resources "/memo", MemoController
-    post "/memo/send", MemoController, :send
-    get "/memo/add/:id", MemoController, :add
+
   end
 
   scope "/", NotifierWeb do
     pipe_through [:browser, :frontend, NotifierWeb.Plugs.AuthenticateUser]
-
+    get "/", PageController, :index
+    resources "/memo", MemoController
+    post "/memo/send", MemoController, :send
+    get "/memo/add/:id", MemoController, :add
   end
 
   # scope "/admin", NotifierWeb.Admin, as: :admin do
