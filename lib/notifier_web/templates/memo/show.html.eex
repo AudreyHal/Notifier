@@ -15,11 +15,12 @@
     <div class= "content-pane-details">
 <div class ="detail-pane columns">
 <div class="column col-2 head"  > Draft:</div><div class="column col-10 field"><span class="status"><%= @detail.is_draft%></span></div>
-<div class="column col-2 head">To:</div><div class="column col-10 field"><%= @detail.users |>Enum.map(&(&1.name)) |> Enum.join(",") %></div>
+<div class="column col-2 head">To:</div><div class="column col-10 field"><%= @detail.users |>Enum.map(&(&1.name)) |> Enum.join(", ") %></div>
 <div class="column col-2 head"  >Title:</div><div class="column col-10 field"><%= @detail.title%></div>
 <div class="column col-2 head" >Message:</div><div class="column col-10 field"><%= @detail.message%></div>
 
 
 </div>
+
 </div>
 </div>

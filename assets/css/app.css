@@ -63,3 +63,4 @@ body{width:100%; min-height: 100% }
 .btn-primary1 {width: 193px; padding-left: 20px; padding-right: 20px; background: #ea4c89 !important; border-color: #ea4c89 !important;}
 .pull-right1 {float: right;}
 #memo_message{height: 200px;}
+.back-btn a{color:white}
