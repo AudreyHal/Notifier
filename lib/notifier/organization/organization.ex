@@ -2,7 +2,6 @@ defmodule Notifier.Organization do
   import Ecto.Query, warn: false
   alias Notifier.Repo
   alias Notifier.Organization.User
-<<<<<<< HEAD
 
   def build_user(attrs \\ %{}) do
     %User{}
@@ -59,20 +58,11 @@ defmodule Notifier.Organization do
   alias Notifier.Organization.Memo
 
  
-=======
-  alias Notifier.Organization.Memo
-
-
-  
->>>>>>> e9d61e31f4699e6161ae786cf1b1e3e3d85618ba
   def list_memos do
     Repo.all(Memo)
   end
 
-<<<<<<< HEAD
   
-=======
->>>>>>> e9d61e31f4699e6161ae786cf1b1e3e3d85618ba
   def get_memo!(id), do: Repo.get!(Memo, id)
 
   def create_memo(attrs \\ %{}) do
@@ -91,11 +81,7 @@ defmodule Notifier.Organization do
     Repo.delete(memo)
   end
 
-<<<<<<< HEAD
- 
-=======
->>>>>>> e9d61e31f4699e6161ae786cf1b1e3e3d85618ba
-  def change_memo(%Memo{} = memo) do
+   def change_memo(%Memo{} = memo) do
     Memo.changeset(memo, %{})
   end
 end
