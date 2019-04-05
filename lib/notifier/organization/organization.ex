@@ -67,10 +67,6 @@ defmodule Notifier.Organization do
     Memo.changeset(memo, %{})
   end
 
-
-
-
-
   def fetch_draft_memo do
     query = from m in Memo, where: m.is_draft == true
     Repo.all(query)

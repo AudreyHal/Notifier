@@ -46,6 +46,15 @@
    margin-top:49px;
    font-size:16px;
    text-align:center;
-    background-color: #ea4c89;
+    background-color: #ea4c89 !important;
     border:0px 
+}
+.reg-alert{
+  margin-top:50px;
+}
+.main_container{
+ background:#ffffff; 
+ width:734px;
+ height:509px;
+ padding:38px 201px 130px 186px;
 }
