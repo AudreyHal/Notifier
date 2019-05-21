@@ -26,7 +26,7 @@ body{width:100%; min-height: 100% }
 .nav{padding-top: 30px;}
 .nav2{padding-top: 20px; padding-bottom: 5px;  }
 
-.title-pane{ background-color: #ffffff; height:70px; border-bottom: 1px rgba(151, 151, 151, 0.3) solid;   margin-top:0px;  width:100%; padding-left:101px; }
+.title-pane{ background-color: #ffffff; height:70px; border-bottom: 1px rgba(151, 151, 151, 0.3) solid;   margin-top:0px;  width:100%;  }
 .icon-container{width:100%}
 .icons{height:48px; margin-bottom: 5px }
 .list{ list-style:none; text-align:center; margin:0px}
